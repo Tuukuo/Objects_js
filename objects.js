@@ -56,4 +56,12 @@ const car = {
       console.log(`Make: ${this.make}, Model: ${this.model}, Year: ${this.year}`);
     },
   };
+  function carInformation(){
+    car.age =function(){
+        let currentYear=2024
+        return currentYear - car.year
+    }
+    console.log(car.age())
+  }
+  carInformation()
   
